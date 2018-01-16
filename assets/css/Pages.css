@@ -1,0 +1,306 @@
+/** Common **/
+body a:hover {
+	text-decoration: none;
+}
+#toTop
+{
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 20px;
+	right: 2%;
+	overflow: hidden;
+	z-index: 999; 
+	width: 40px;
+	height: 40px;
+	border: none;
+	text-indent: 100%;
+	background: url(/Macsit/assets/img/arrow.png) no-repeat 0px 0px;
+}
+#toTopHover
+{
+	width: 40px;
+	height: 40px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+}
+.page-heading{
+	padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+.small{
+	max-width:100px;
+	margin:15px auto;
+	border-width:4px;
+	border-color:#fff;
+}
+
+.page-title{
+	text-align: center;	
+}
+
+.begining{
+
+	 padding-top: 50px;
+    padding-bottom: 50px;
+}
+/** end of Common**/
+/** Home **/
+.item a img{
+	width: 100%;
+	height: 500px !important;
+	opacity: .4;
+}
+.item
+{
+	background: black;
+}
+/** end of Home **/
+/** Login **/
+.form-log
+{
+	margin-bottom: 20px;
+}
+/** end of Login **/
+/** Posts **/
+.post-cover{
+	height: 450px;
+}
+.post-cover-content{
+	padding-top: 300px;
+	margin-left: 40px; 
+	color: white;
+}
+.post-cover-content h2{
+	margin-top: 0px;
+	font-weight: 600;
+	font-size: xx-large;
+}
+
+.posted_date{
+	font-size: 120% !important;
+}
+
+.post-body{
+	margin-top: 30px;
+	margin-bottom: 50px;
+    padding-left: 50px;
+}
+.comment-block{
+	margin-bottom: 10px;
+}
+.comment-item
+{
+	border-top: 1px solid #d1d1d1;
+    padding: 1.75em 0;
+    display: block;
+}
+.avatar img
+{
+	height: 42px;
+	width: 42px;
+	position: relative;
+	top: 0.25em;
+	border-radius: 50%;
+	float: left;
+	margin-right: 0.875em;
+}
+.comment-data
+{
+	margin-bottom: 2.1538461538em;
+	color: #686868;
+}
+.comment
+{
+	background: rgba(15,13,13,1.00);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	padding: 100px 0;
+}
+.comment h3
+{
+	font-size: 40px;
+	margin-bottom: 50px;
+	color: #FFF;
+	text-align: center;
+}
+/** end of Posts **/
+
+
+
+/** About **/
+.about-1title{
+	font-size: 34px;
+	margin-bottom: 0.6em;
+}
+.about-img{
+	background: url("/Macsit/assets/img/1 (1).jpg") fixed;
+	background-size: cover;
+	min-height: 300px;
+	border: 5px solid #f5b120;
+}
+.about-img h2{
+	text-align: center;
+	margin-top: 140px;
+	font-weight: 800;
+	color: whitesmoke;
+}
+.about-view{
+	border-left: 3px solid #f5b120;
+    margin-top: 1.5em;
+}
+.about-view h5{
+	color: #000;
+    font-size: 21px;
+    letter-spacing: .6px;
+    text-transform: capitalize;
+    padding: 20px 0 10px;
+}
+
+.about-p{
+	color: #777;
+    font-size: 16px;
+    letter-spacing: .4px;
+    line-height: 33px;
+}
+.our-niggas{
+	background: #D6D3D3;
+	text-align: center;
+}
+.our-niggas .row{
+	margin-left: 30px;
+}
+.people-main{
+	padding-top: 40px;
+}
+.people-img img{
+	width: 200px;
+	height: 200px;
+	border:7px solid #dddbdb;
+	-moz-border-radius: 25px 25px 25px 25px;
+	-webkit-border-radius: 25px 25px 25px 25px;
+	border-radius: 500px;
+}
+.people h4{
+font-size:22px;
+padding-top:6px;
+font-weight:600;
+}
+
+.people p{
+font-size:18px;
+padding-top:3px;
+}
+.people{
+	
+	padding-top: 20px;
+}
+/** end of About **/
+
+/** Categories **/
+.cat-create
+{
+	padding-bottom: 100px;
+}
+.cat-delete .btn-cust{
+	float: none;
+}
+.categories-hold-1 img{
+	width: 255px;
+	height: 255px;
+}
+.category-hold-2 .carousel-caption{
+	padding-bottom: 0px;
+    bottom: 42px;
+}
+/** end of Categories **/
+/** Admin **/
+.admin-cont-table{
+	border-bottom: 2px solid #1F8F16;
+}
+.admin-post-item, .admin-category-item{
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 13px;
+	
+}
+
+.see-more{
+	padding-bottom: 25px;
+	text-align: center;
+}
+.btn-admin
+{
+	width: 100%;
+    margin: 0 3px;
+    padding: 1em;
+    border:  1px solid #1F8F16;
+	margin-bottom: 20px;
+}
+
+/** end of Admin **/
+/** User Position **/
+.page-heading .img img{
+	width: 320px;
+	height: 320px;
+	border-radius: 100%;
+}
+/** end of User Position **/
+/**services**/
+.services-cont
+{
+	padding: 30px 0px 30px 0px;
+}
+.service-number
+{
+	float: left;
+    border-right: 1px solid #B6B3B3;
+    padding-right: 15px;
+}
+.service-number b 
+{
+	font-size: 40px;
+    color:rgba(30,163,29,1.00);
+    display: block;
+    height: 50px;
+}
+.service-number span 
+{
+	font-size: 1.5em;
+    color: #0c0c0c;
+    text-align: center;
+    display: block;
+    padding-top: 4px;
+}
+.service-item
+{
+	
+    margin: 15px 0px 0px 15px;
+    width: 80%;
+}
+.service-item h5
+{
+	font-size: 1.9em;
+    letter-spacing: 1px;
+    color: #000000;
+	margin-left: 60px;
+}
+.service-item p
+{
+    margin-top: 2.5em;
+	margin-left: 60px;
+	color: #777;
+    font-size: 16px;
+    letter-spacing: .4px;
+    line-height: 33px;
+}

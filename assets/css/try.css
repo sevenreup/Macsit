@@ -1,0 +1,427 @@
+/** Tabs **/
+.admin-wid
+{
+	background: transparent!important;
+	border: none!important;
+}
+.admin-nav
+{
+	padding: 0px;
+	max-width: none;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.admin-tabs
+{
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	border: none!important;
+	margin: 20px 0px!important;
+
+}
+.admin-tabs a
+{
+	padding: 0.7em 0.4em;
+	box-shadow: inset 0 -2px #d1d3d2;
+	color: #74777b;
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8em;
+	line-height: 1;
+	-webkit-transition: color 1.5s, box-shadow 1.5s;
+	transition: color 1.5s, box-shadow 1.5s;
+
+}
+.admin-tabs a:hover
+{
+}
+.ui-tabs-active a
+{
+	box-shadow: inset 0 -2px #2CC185;
+	color: #2CC185;
+}
+/** end of Tabs **/
+/** Buttons **/
+.btn-more{
+	border:  2px solid #05a6b3;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	margin: 10px auto auto auto;
+	text-align: center;
+	width: 110px;
+	color: #05a6b3;
+}
+.btn-more:hover
+{
+	background: #05a6b3;
+	color: white;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+.btn-cust
+{
+	padding: 4px 40px;
+	font-family: 'Montserrat', sans-serif;
+	background-color:  #1F8F16;
+	color: white;
+	border: 5px solid transparent;
+	font-size: 16px;
+	float: right;
+}
+.btn-cust:hover
+{
+	background: rgba(39,124,26, 0);
+	border: 5px solid  #1F8F16;
+	color:rgba(51,144,28,1.00);
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.btn-cust-danger
+{
+	padding: 4px 40px;
+	font-family: 'Montserrat', sans-serif;
+	background-color:  rgba(192,9,9,1.00);
+	color: white;
+	border: 5px solid transparent;
+	font-size: 16px;
+	float: right;
+}
+.btn-cust-danger:hover
+{
+	background: transparent;
+	border: 5px solid  #C00909;
+	color:rgba(192,9,9,1.00);
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+/** end of Buttons **/
+/** Modal Boxes**/
+.modal-footer .btn
+{
+	float: right;
+}
+.modal-footer input
+{
+	float: left !important;
+}
+.modal-body
+{
+	text-align: center;
+}
+.modal-title
+{
+	text-align: center;
+}
+/** end of Modal Boxes**/
+/** forms **/
+.form-log span
+{
+	background: #1F8F16;
+	border: none;
+	color: white;
+}
+.text-input
+{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid  #1F8F16;
+	color:rgba(51,144,28,1.00);
+	outline: none;
+	background: transparent;
+	border-left: 5px solid  #1F8F16;
+	border-radius: 0;
+	margin-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+}
+.text-area
+{
+	height: 160px;
+	margin-bottom: 0px;
+}
+.input-group-addon
+{
+	background: #1F8F16;
+	color: white;
+}
+select{
+	appearance: none!important;
+	-webkit-appearance: none!important;
+	-moz-appearance: none!important;
+	-o-appearance: noborder-top-color!important;
+	-ms-appearance: none!important;
+	
+	display: block!important;
+	margin: 30px 0px;
+	padding: 6px 50px 10px 10px!important;
+	width: 100%!important;
+	color: #1F8F16!important;
+	background: url(/Macsit/assets/img/select.png) no-repeat 95% center!important;
+	background-color: transparent!important;
+	border: 1px solid  #1F8F16!important;
+	border-left: 5px solid  #1F8F16!important;
+}
+input[type="email"]:valid, input[type="password"]:valid, input[type="username"]:valid, input[type="username"]:valid {
+	border: 2px solid white;
+}
+input[type=file]
+{
+	background: transparent;
+	border: 1px solid  #1F8F16;
+	color: #1F8F16;
+}
+/** end of forms **/
+/** Js Shit **/
+
+.ui-widget.ui-widget-content {
+	border: 1px solid #dddddd;
+	background:rgba(31,143,22,1.00);
+	color: #333333;
+}
+.ui-datepicker {
+	border-radius: 4px;
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+}
+
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 45%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+	color: white;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+	right: 2px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right: 1px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width: 0;
+	border-left-width: 1px;
+}
+
+/* Icons */
+.ui-datepicker .ui-icon {
+font-weight: 900;
+font-size: larger;
+color: rgba(31,200,22,1.00);
+}
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight,
+.ui-state-hover, .ui-state-active
+ {
+ 	box-shadow: inset 0 -2px #2CC185;
+    color: #2CC185;
+}
+
+/** end of Js Shit **/
+.post-thumb-h img{
+	width: 100%;
+	height: 350px;
+}
+.post-thumb-h{
+	width: 100% !important;
+}
+.single-post{
+	background: #222;
+	border: 1px solid #dfdede;
+	box-shadow: 2px 5px 10px #dfdede;
+	margin: 15px auto;
+	padding: 5px;
+	position: relative;
+	height: 640px;
+}
+.post-content{
+	padding: 15px;
+
+}
+.post-content h4{
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.post-content p{
+	color: #999;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.3333;
+}
+.post-date{
+	position: absolute;
+	background: #337ab7;
+	top: 35px;
+	left: 5px;
+	color: #fff;
+	border-radius: 0 25px 25px 0;
+	padding: 5px 15px;
+	font-weight: 700;
+
+}
+
+
+
+.cat-delete{
+	display:inline;
+}
+
+.caption{
+	width: 100%;
+	bottom: .3rem;
+	background: rgba(0, 0, 0, 0.2);
+
+}
+.thumbnail{
+	border: 0 none;
+	box-shadow: none;
+}
+
+.caption h4{
+	color: #fff;
+}
+.btn-link text-danger{
+	float: left;
+}
+/*media all*/

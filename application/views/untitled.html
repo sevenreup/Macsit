@@ -1,0 +1,70 @@
+<div class="post-cover" style="background: url('<?php echo site_url(); ?>assets/images/posts/<?php echo $post['post_image']; ?>') center;">
+	<div class="post-cover" style="background: url(/Macsit/assets/img/top.png) repeat;">
+		<div class="post-cover-content">
+			<h2><?php echo $post['title']; ?></h2>
+			<small class="posted_date">Posted on: <?php echo $post['created_at']; ?></small><br>
+		</div>
+		</div>
+</div>
+<div class="post-body col-lg-12">
+		<?php echo $post['body']; ?>
+<?php if($this->session->userdata('user_id') == $post['user_id']): ?>
+		<hr>
+		<a class="btn btn-default pull-left" href="<?php echo base_url(); ?>posts/edit/<?php echo $post['slug']; ?>">Edit</a>
+		<?php endif; ?>
+<?php if($this->session->userdata('user_id') == $post['user_id']  || $this->session->userdata('admin')): ?>
+			<?php echo form_open('/posts/delete/'.$post['id']); ?>
+				<input type="submit" value="Delete" class="btn btn-danger">
+			</form>
+<?php endif; ?>
+</div>
+<div class="col-lg-12 comment-block">
+	<h3>Comments</h3>
+	<?php if($comments) : ?>
+		<?php foreach($comments as $comment) : ?>
+			<div class="well">
+				<h5><?php echo $comment['body']; ?> [by <strong><?php echo $comment['name']; ?></strong>]</h5>
+			</div>
+		<?php endforeach; ?>
+	<?php else : ?>
+		<p>No comments to display</p>
+	<?php endif; ?>
+	<hr>
+<div class="comment">
+	<div class="container">
+		<h3>Add Comment</h3>	
+<?php if(!$this->session->userdata('user_id') == $post['user_id']): ?>
+		<?php echo validation_errors(); ?>
+		<?php echo form_open('comments/create/'.$post['id']); ?>
+		<div class="col-md-6 input-right">
+			<div class="form-group">
+				<input type="text" name="name" class="text-input" placeholder="Enter Name">
+			</div>
+			<div class="form-group">
+				<input type="text" name="email" class="text-input" placeholder="Enter Email">
+			</div>
+		</div>
+		<div class="col-md-6 input-left">
+			<div class="form-group">
+				<textarea name="body" class="text-input text-area" placeholder="Comment"></textarea>
+			</div>
+			<input type="hidden" name="slug" value="<?php echo $post['slug']; ?>">
+			<button class="btn-cust" type="submit">Submit</button>
+		</div>
+
+		</form>
+		
+<?php else : ?>
+<?php echo validation_errors(); ?>
+	<?php echo form_open('comments/create/'.$post['id']); ?>
+	<div class="container input-right">
+		<div class="form-group">
+			<textarea name="body" class="text-input" placeholder="Comment"></textarea>
+		</div>
+		<input type="hidden" name="slug" value="<?php echo $post['slug']; ?>">
+		<button class="btn-cust" type="submit">Submit</button>
+<?php endif; ?>
+	</div>
+	</div>
+</div>
+</div>
